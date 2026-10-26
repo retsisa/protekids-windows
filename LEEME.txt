@@ -1,0 +1,15 @@
+ProteKids para Windows - como obtener el instalador (.exe)
+
+1. Crea un repositorio en GitHub y sube TODO el contenido de esta carpeta
+   (incluida la carpeta oculta .github).
+2. Ve a la pestana "Actions" > "Build Windows Installer" > "Run workflow"
+   (tambien se ejecuta solo al subir cambios).
+3. Cuando termine (unos 3-5 min), abre la ejecucion y descarga el artefacto
+   "ProteKids-Setup": dentro esta ProteKids-Setup-1.0.0.exe.
+4. Ese .exe es el instalador: pregunta en que carpeta instalar, crea acceso
+   directo en el escritorio y en el menu Inicio.
+
+Para generarlo en tu propio PC con Windows (necesita Node.js 22):
+   npm install
+   npx electron-builder --win nsis --x64
+El instalador queda en la carpeta "dist".

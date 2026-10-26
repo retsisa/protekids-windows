@@ -1,0 +1,1 @@
+Coloca aqui: polera.png, pantalon.png, falda.png, tenis.png, visera.png (PNG transparente). Rutas en js/levels12.js.

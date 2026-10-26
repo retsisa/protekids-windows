@@ -1,0 +1,1 @@
+Coloca aqui: feliz.png, triste.png (y mas adelante enojado.png, aburrido.png). Rutas en index.html.

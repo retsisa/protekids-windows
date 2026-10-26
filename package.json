@@ -1,0 +1,27 @@
+{
+  "name": "protekids",
+  "version": "1.0.0",
+  "description": "ProteKids - Pequeñas voces, grandes derechos",
+  "author": "ProteKids",
+  "main": "main.js",
+  "scripts": { "dist": "electron-builder --win nsis --x64" },
+  "devDependencies": { "electron": "^33.2.0", "electron-builder": "^25.1.8" },
+  "build": {
+    "appId": "com.protekids.app",
+    "productName": "ProteKids",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "www/**/*", "build/icon.png"],
+    "win": { "target": [{ "target": "nsis", "arch": ["x64"] }], "icon": "build/icon.ico", "signAndEditExecutable": false },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "language": "3082",
+      "artifactName": "ProteKids-Setup-${version}.exe"
+    }
+  }
+}

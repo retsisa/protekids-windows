@@ -1,0 +1,1 @@
+Coloca aqui: logo.png, educadora.png, nino.png, nina.png. Si usas otros nombres, cambia las rutas (comentadas RECURSO PROPIO) en index.html y js/levels12.js.
